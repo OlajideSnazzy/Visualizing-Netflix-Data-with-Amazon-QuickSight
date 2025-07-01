@@ -33,7 +33,7 @@ This project demonstrates how to use **Amazon QuickSight** to analyze and visual
 - Created a **donut chart** showing the count of records by release year.
 - Built additional charts using field modifications and filters to extract meaningful insights from the dataset.
 
-![Data Visualization](aws-quicksight/dataone.png)
+![Data Visualization](aws-quicksight/data-one.png)
 
 ---
 
