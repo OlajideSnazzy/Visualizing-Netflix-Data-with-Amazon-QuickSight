@@ -1,69 +1,62 @@
-# Using Amazon QuickSight to Visualize Data
+# 📊 Using Amazon QuickSight to Visualize Data
 
-## Overview
+## 🧾 Overview
 
 This project demonstrates how to use **Amazon QuickSight** to analyze and visualize data from a large dataset of Netflix shows and movies. The goal is to create an interactive dashboard that reveals key insights from the data.
 
 ---
 
-## Step 1: Setting Up the Dataset in Amazon S3
+## 📁 Step 1: Setting Up the Dataset in Amazon S3
 
-- Created an **S3 bucket** to store the dataset (`.csv` file) and the `manifest.json` file.
+- Created an **S3 bucket** to store the dataset (`netflix_titles.csv`) and the `manifest.json` file.
 - Uploaded the dataset to the bucket.
-- Edited the `manifest.json` file to include the correct S3 object URL pointing to the dataset.
-- Uploaded the modified `manifest.json` file back into the S3 bucket.
+- Edited the `manifest.json` to include the correct S3 object URL pointing to the dataset.
+- Uploaded the modified `manifest.json` back into the S3 bucket.
+
+![Uploading File to S3](aws-quicksight/file-upload.png)
 
 ---
-![Git Init](aws-quicksight/file-upload.png)
----
 
-## Step 2: Setting Up Amazon QuickSight
+## ⚙️ Step 2: Setting Up Amazon QuickSight
 
 - Signed up for an **Amazon QuickSight** account (30-day free trial).
-- Enabled **QuickSight access to S3** to allow the tool to process the dataset stored in my bucket.
-- Connected QuickSight to my S3 bucket using the manifest file as the data source.
+- Enabled **QuickSight access to S3** so it could process the dataset stored in my bucket.
+- Connected QuickSight to my S3 bucket using the manifest file as a data source.
+
+![Creating QuickSight Account](aws-quicksight/quicksight-account.png)
 
 ---
-![Git Init](aws-quicksight/quicksight-account.png)
----
 
-## Step 3: Building Visualizations
+## 📈 Step 3: Building Visualizations
 
-- Used the **AutoGraph feature** in QuickSight by dragging relevant fields into the visual pane.
+- Used the **AutoGraph feature** by dragging relevant fields into the visualization pane.
 - Created a **donut chart** showing the count of records by release year.
-- Built additional charts using various field modifications and filters to extract meaningful insights from the dataset.
+- Built additional charts using field modifications and filters to extract meaningful insights from the dataset.
+
+![Data Visualization](aws-quicksight/dataone.png)
 
 ---
-![Git Init](aws-quicksight/dataone.png)
----
 
-## Step 4: Finalizing the Dashboard
+## 📊 Step 4: Finalizing the Dashboard
 
 - Published the final dashboard for easy access and sharing.
-- Exported the dashboard as a **PDF** document for offline viewing.
+- Exported the dashboard as a **PDF** for offline viewing.
 
----
-![Git Init](aws-quicksight/dashboard.png)
----
-
-## Key Takeaways
-
-- QuickSight makes it easy to explore, analyze, and visualize data from S3 without heavy setup.
-- You must grant QuickSight access to the specific S3 bucket where your data is stored.
-- Manifest files are essential for connecting S3-stored data to QuickSight when not using built-in connectors.
+![Published Dashboard](aws-quicksight/dashboard.png)
 
 ---
 
-## Sample Screenshots
+## ✅ Key Takeaways
 
-> *(You can insert your screenshots here)*  
-> `![Dashboard Screenshot](images/quicksight-dashboard.png)`
+- QuickSight makes it easy to explore and visualize data directly from Amazon S3.
+- You must grant QuickSight explicit access to the S3 bucket containing your dataset.
+- Using a `manifest.json` file is necessary for S3-sourced datasets.
 
 ---
 
-## Files Used
+## 📂 Files Used
 
-- `netflix_titles.csv`  
+- `netflix_titles.csv`
 - `manifest.json`
 
 ---
